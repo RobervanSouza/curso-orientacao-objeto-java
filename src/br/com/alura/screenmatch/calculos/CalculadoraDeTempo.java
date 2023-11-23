@@ -8,7 +8,7 @@ import br.com.alura.screenmatch.modelos.Titulo;
 public class CalculadoraDeTempo {
     private int tempoTotal;
 
-    private int teste;
+
     public int getTempoTotal() {
         return this.tempoTotal;
     }
