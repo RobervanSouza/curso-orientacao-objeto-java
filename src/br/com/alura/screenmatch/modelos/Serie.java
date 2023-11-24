@@ -12,6 +12,7 @@ public class Serie extends Titulo {
     }
 
 
+
     public int getTemporadas() {
         return temporadas;
     }
