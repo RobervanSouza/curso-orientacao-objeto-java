@@ -5,6 +5,8 @@ import br.com.alura.screenmatch.modelos.Serie;
 import br.com.alura.screenmatch.modelos.Titulo;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class Listas {
     public static void main(String[] args) {
@@ -30,14 +32,14 @@ public class Listas {
             System.out.println(item.getNome());
             if (item instanceof Filme filme && filme.getClassificacao() > 2){
             System.out.println("classificação:  " + filme.getClassificacao());
-            };
+            }
         }
 
 
         Filme favorito = new Filme(" The Matrix", 1999);
         favorito.avalia(10);
 
-        Filme outro = new Filme("teste", 2014);
+        Filme outro = new Filme("Alice", 2014);
         outro.avalia(9);
 
         Serie serie = new Serie("robervan", 2017);
@@ -53,5 +55,24 @@ public class Listas {
                 System.out.println("Classificação do Filme:  " +filme.getClassificacao());
             }
         }
+
+        ArrayList<String> buscaArtista = new ArrayList<>();
+        buscaArtista.add("robervan souza");
+        buscaArtista.add("Auriene");
+        buscaArtista.add("bia");
+        buscaArtista.add("Alice");
+        System.out.println(buscaArtista);
+
+        Collections.sort(buscaArtista);
+        System.out.println(buscaArtista);
+
+
+        System.out.println("Titulos Ordenados:::");
+
+        Collections.sort(lista);
+        System.out.println("lista" + lista);
+        lista.sort(Comparator.comparing(Titulo::getAnoDeLancamento)); // metodo comparação;
+        System.out.println("ano de lancamento: " + lista);
+
     }
 }
