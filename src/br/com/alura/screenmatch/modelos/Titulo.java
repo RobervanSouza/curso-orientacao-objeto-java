@@ -9,6 +9,7 @@ public class Titulo implements Comparable<Titulo>  {
     @SerializedName("Ano")
     private int anoDeLancamento;
 
+
     private boolean incluidoNoPlano;
     private double somaDasAvaliacoes;
     private int totalDeAvaliacoes;
