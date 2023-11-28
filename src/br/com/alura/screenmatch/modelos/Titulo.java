@@ -4,9 +4,9 @@ import br.com.alura.screenmatch.modelos.exception.ErroDeConversaoDeAno;
 import com.google.gson.annotations.SerializedName;
 
 public class Titulo implements Comparable<Titulo>  {
-   @SerializedName("Title")
+   @SerializedName("Nome")
     private String nome;
-    @SerializedName("Year")
+    @SerializedName("Ano")
     private int anoDeLancamento;
 
     private boolean incluidoNoPlano;
